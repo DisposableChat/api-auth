@@ -1,23 +1,33 @@
 package main
 
 import (
+	"flag"
+
 	"github.com/DisposableChat/api-core"
 	"github.com/joho/godotenv"
 )
 
 var (
-	Production = true
+	Production *bool
 	Redis 	= RedisAPI{}
 )
 
 func main() {
-	if !Production {
-		err := godotenv.Load("/home/jean/Desktop/DisposableChat/api/api.dev.env")
+	Production = flag.Bool("production", false, "Production mode")
+	devEnvPath := flag.String("devenv", "", "Development environment path")
+	flag.Parse()
+
+	if !*Production && *devEnvPath != "" {
+		err := godotenv.Load(*devEnvPath)
 		if err != nil {
 			panic(err)
 		}
-	}
-
+	} else if !*Production && *devEnvPath == "" {
+		panic("No development environment path provided")
+	} else if *Production && *devEnvPath != "" {
+		panic("Production mode and development environment path provided")
+	} 
+	
 	err := core.GenerateLocalHashPassword()
 	if err != nil {
 		panic(err)
