@@ -1,5 +1,5 @@
-github.com/DisposableChat/api-core v0.0.0-20230108004022-76adfb76160f h1:YWcMlWYSJUszYXwWbukjCEDURLXcb/QWJC9bE+D8rgk=
-github.com/DisposableChat/api-core v0.0.0-20230108004022-76adfb76160f/go.mod h1:lnRxNbLETPanCvBWHMiI5f2E7HCdhfhoqcWSNMzrgiE=
+github.com/DisposableChat/api-core v0.0.0-20230108182925-c47aad8fc3e5 h1:btO+HJJ5SfEvGi111za+sZX9P97Qpah3UOnTCycImn4=
+github.com/DisposableChat/api-core v0.0.0-20230108182925-c47aad8fc3e5/go.mod h1:lnRxNbLETPanCvBWHMiI5f2E7HCdhfhoqcWSNMzrgiE=
 github.com/andybalholm/brotli v1.0.4 h1:V7DdXeJtZscaqfNuAdSRuRFzuiKlHSC/Zh3zl9qY3JY=
 github.com/andybalholm/brotli v1.0.4/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
 github.com/cespare/xxhash/v2 v2.2.0 h1:DC2CZ1Ep5Y4k3ZQ899DldepgrayRUGE6BBZ/cd9Cj44=

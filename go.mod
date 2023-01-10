@@ -3,7 +3,7 @@ module github.com/DisposableChat/api-auth
 go 1.18
 
 require (
-	github.com/DisposableChat/api-core v0.0.0-20230108004022-76adfb76160f
+	github.com/DisposableChat/api-core v0.0.0-20230108182925-c47aad8fc3e5
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/gofiber/fiber/v2 v2.41.0
 	github.com/joho/godotenv v1.4.0
